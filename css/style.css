@@ -1,0 +1,460 @@
+/* 초기화 */
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family : Georgia, "Malgun Gothic", "고딕", serif;
+}
+
+/*----------------- header ------------------*/
+.header-top {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    background: #ffffff;
+    z-index: 1;
+}
+/*------------------ nav ---------------*/
+.nav-top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;                 /* 수평정렬 */
+    padding: 0 1.5rem;
+}
+.logo {
+    display: block;
+}
+.logo img {
+    max-height: 60px;
+}
+
+.menu {
+    display: flex;
+}
+.menu li {
+    margin: 0 2rem;
+    list-style: none;
+    font-size: 18px;
+    font-style: normal;
+}
+.menu li a {            /* menu item */
+    position: relative;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.menu li a:hover {
+    color: rgb(109,109,109);
+}
+.menu li ul {
+    position:absolute;
+    background: none;
+    display:none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
+    text-align: left;
+    height:auto;
+    padding:0px;
+    margin-top:18px;
+    margin-left: -30px;
+    border:0px;
+    width:100px;
+    z-index:1;
+}
+.menu li:hover ul {
+    display: block;
+}
+/*-------------- nav of end --------------*/
+/*-------------- header of end ----------------*/
+
+/*---------------- header img title ------------------*/
+.header-title{
+    position: relative;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/shoes.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 907px;
+}
+.banner {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.banner-top {
+    display: flex;
+    height: max-content;
+    max-height: 500px;
+    margin-top: 30px;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0px 2px gray;
+}
+.banner-title {
+    font-size: 22px;
+}
+.banner-title-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    word-break: keep-all;
+    font-size: 40px;
+}
+.banner-title-con-em {
+    margin-top: 10px;
+    font-style: normal;
+    text-align: center;
+    word-break: keep-all;
+    font-size: 35px;
+}
+.banner-title-btn {
+    font-size: large;
+    color: white;
+    margin: 100px 0;
+    padding: 10px 15px;
+    background: rgb(61, 61, 61);
+    transition: background-color 0.5s;
+    border: 2px solid rgb(61, 61, 61);
+}
+.banner-title-btn:hover {
+    color: rgb(61, 61, 61);
+    background-color : transparent;
+    border: 2px solid rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+.banner-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-scroll-btn {
+    position: absolute;
+    bottom: 0;
+    font-size: large;
+    font-weight: 700;
+    color: rgb(173, 173, 173);
+    padding: 10px 15px;
+    background: rgb(61, 61, 61, 0);
+    transition: background-color 0.5s;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 100%;
+    text-decoration: none;
+}
+.banner-scroll-btn:hover{
+    color: rgb(216, 214, 214);
+    background-color : transparent;
+    border: 2px solid rgb(216, 214, 214);
+    cursor: pointer;
+}
+/*----------------- header img title of end ----------------*/
+
+/*------------------ first item ---------------------*/
+.about {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container {
+    margin-top: 50px;
+    width: 60%;
+    min-width: 400px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-title {
+    margin: 10;
+}
+.about-section {
+    padding: 20px;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 300;
+    font-family : "맑은 고딕", serif;
+    color: rgb(61, 61, 61);
+}
+/*---------------------- first item of end ----------------*/
+
+/*---------------------- background item ------------------*/
+.background-container {
+    width: 100%;
+    height: calc(1000px - 20vw);
+}
+
+.background-image1 {
+    height: calc(1000px - 20vw);
+    background-size: 100vw 100vh;
+    background-image: url("../images/gray.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+.background-text {
+    width: 40vw;
+    height: calc(1000px - 22vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo-text-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30vw;
+    padding-right: 100px;
+    margin: 0;
+    justify-content: flex-end;
+    font-size: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0px 2px gray;
+    font-family : Georgia, "Malgun Gothic", "고딕", serif;
+}
+.photo-text-title-pick {
+    padding: 0;
+    margin: 0;
+    text-shadow: 0px 2px gray;
+    font-size: 85px;
+
+}
+.photo-text-title-your {
+    padding: 0;
+    margin: 0;
+}
+.photo-text-header {
+    display: flex;
+    width: 30vw;
+    padding-right: 100px;
+    margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    text-shadow: 0px 2px gray;
+    font-family : Georgia, "Malgun Gothic", "고딕", serif;
+}
+.photo-text-body {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 30vw;
+    padding-right: 100px;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    text-shadow: 0px 2px gray;
+    font-family : Georgia, "Malgun Gothic", "고딕", serif;
+}
+.photo-text-footer {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    width: 30vw;
+    max-width: 40vw;
+    max-height: 450px;
+    padding-right: 150px;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    color: #ffffff;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    text-shadow: 0px 2px gray;
+    font-family : Georgia, "Malgun Gothic", "고딕", serif;
+}
+.background-photo {
+    display: flex;
+    width: 60vw;
+    height: calc(1000px - 22vw);
+    background-size: 70% 70%;
+    background-image: url("../images/html.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.background-image2 {
+    display: flex;
+    height: calc(1000px - 20vw);
+    background-size: 100vw 100vh;
+    background-image: url("../images/cafe.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.background-logo {
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    background-image: url("../images/coding.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*-------------------------- background item of end ------------------*/
+
+/*-------------------------- product item -------------------*/
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    margin-top: 50px;
+
+}
+.product-container {
+    width: 100%;
+    height: calc(300px - 5vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-header {
+    width: 60%;
+    min-width: 400px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-title {
+    margin: 10;
+}
+.product-body {
+    padding: 20px;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 300;
+    font-family : "맑은 고딕", serif;
+    color: rgb(61, 61, 61);
+}
+
+/* ---------------Grid--------------- */
+.product-box {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(3, 350px);
+    grid-auto-rows: 350px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-items: center;
+}
+.product-item1 {
+    background-image: url("../images/item5.jpg");
+}
+.product-item2 {
+    background-image: url("../images/item2.jpg");
+}
+.product-item3 {
+    background-image: url("../images/item3.jpg");
+}
+.product-item4 {
+    background-image: url("../images/item4.jpg");
+}
+.product-item5 {
+    background-image: url("../images/item1.jpg");
+}
+.product-item6 {
+    background-image: url("../images/item6.jpg");
+}
+.product-item7{
+    background-image: url("../images/item7.jpg");
+    
+}
+.product-item8{
+    background-image: url("../images/item8.jpg");
+    width: 80%;
+    height: 60%;
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition : 0.3s;
+    -webkit-filter: grayscale(0%);
+}
+.product-item8:hover {
+    -webkit-filter: grayscale(100%);
+    filter: rgb(120, 105, 248);
+    cursor: pointer;
+}
+.product-item9{
+    background-image: url("../images/item9.jpg");
+}
+.product-item {
+    width: 80%;
+    height: 100%;
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition : 0.3s;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+.product-item:hover {
+    -webkit-filter: grayscale(100%);
+    filter: rgb(120, 105, 248);
+    cursor: pointer;
+}
+/* ---------------Grid of end--------------- */
+/*--------------- product item of end ----------------------*/
+
+/*--------------- footer ------------------*/
+.footer-container {
+    width: 100%;
+    height: calc(500px - 10vw);
+    margin-top: 50px;
+    background-image: url("../images/bottom.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family : "맑은 고딕", serif;
+}
+.footer-text {
+    width: 60%;
+    min-width: 400px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text-header {
+    font-size: 25px;
+    text-align: center;
+    word-break: keep-all;
+}
+.footer-text-body {
+    padding: 20px;
+    font-size: 18px;
+    margin: 10;
+}
+/*------------------- footer of end ----------*/
